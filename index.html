@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="rock-paper-scissors.js" defer></script>
+    <link rel="stylesheet" href="rock-paper-scissors.css" />
+  </head>
+
+  <body>
+    <div class="rock-paper-scissors">
+      <h1>Rock paper scissors</h1>
+      <p>Will you be able to beat the computer?</p>
+      <p class="rock-paper-scissors__caption">First to 5 wins</p>
+      <h2 class="rock-paper-scissors__secondary-title">Pick your weapon</h2>
+
+      <div class="rock-paper-scissors__btns">
+        <button class="btn btn--weapon" id="rock">🪨<br />Rock</button>
+        <button class="btn btn--weapon" id="paper">🧻<br />Paper</button>
+        <button class="btn btn--weapon" id="scissors">✂️<br />Scissors</button>
+      </div>
+
+      <div class="rock-paper-scissors__scoreboard" id="scoreboard">
+        <div class="rock-paper-scissors__player-outcomes">
+          <div class="rock-paper-scissors__player-outcome">
+            <h2>🥸<br />You</h2>
+            <p id="player-selection"></p>
+          </div>
+          <div class="rock-paper-scissors__player-outcome">
+            <p class="rock-paper-scissors__caption">vs</p>
+          </div>
+          <div class="rock-paper-scissors__player-outcome">
+            <h2>🤖<br />Computer</h2>
+            <p id="computer-selection"></p>
+          </div>
+        </div>
+
+        <p
+          class="rock-paper-scissors__caption rock-paper-scissors__caption--highlighted"
+          id="round-result"
+        ></p>
+
+        <div class="rock-paper-scissors__scores">
+          <div class="rock-paper-scissors__score">
+            <p id="player-score-total"></p>
+          </div>
+          <div class="rock-paper-scissors__score">
+            <hr class="rock-paper-scissors__separator" />
+          </div>
+          <div class="rock-paper-scissors__score">
+            <p id="computer-score-total"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rock-paper-scissors__win-announcement" id="win-announcement">
+        <p class="rock-paper-scissors__caption" id="game-winner"></p>
+        <button class="btn" id="play-again-btn">Play again</button>
+      </div>
+    </div>
+  </body>
+</html>
